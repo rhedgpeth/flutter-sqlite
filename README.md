@@ -2,7 +2,7 @@
 
 ![Build status](https://app.bitrise.io/app/a3e6d55c1d6ee760/status.svg?token=wqZw6gGe-o-P4SLLYl1Caw) [![License (MIT)][licence-image]][licence-url]
 
-This repository contains a simple Flutter application that manages contact information using SQLite (via SQFLite).
+This repository contains a simple [Flutter](https://flutter.dev/) application that manages contact information using [SQLite](https://www.sqlite.org/index.html) (via [SQFLite](https://pub.dev/packages/sqflite)).
 
 <p align="center" spacing="10">
     <kbd>
