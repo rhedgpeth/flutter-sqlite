@@ -12,7 +12,7 @@ This repository contains a simple [Flutter](https://flutter.dev/) application th
 
 ## Requirements 
 
-To run this application be sure to check out [the Flutter documentation](https://docs.flutter.dev/get-started/install) for getting. 
+To run this application be sure to check out [the Flutter documentation](https://docs.flutter.dev/get-started/install) for getting started. 
 
 ## Key takeaways 
 
@@ -27,7 +27,7 @@ dependencies:
   flutter:
     sdk: flutter
   sqflite: any
-  path_provider: an
+  path_provider: any
 ```
 
 From there a SQLite database (and tables) can be created and used within the application. 
