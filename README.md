@@ -32,7 +32,7 @@ dependencies:
 
 From there a SQLite database (and tables) can be created and used within the application. 
 
-For this applicaiton I have put all of the SQFLite usages within [database_help.dart](src/data/database_help.dart).
+For this applicaiton I have put all of the SQFLite usages within [database_helper.dart](src/data/database_helper.dart).
 
 ```dart
 import 'dart:async';
