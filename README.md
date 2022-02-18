@@ -1,4 +1,4 @@
-# Flutter + SQlite 
+# Flutter + SQLite 
 
 ![Build status](https://app.bitrise.io/app/a3e6d55c1d6ee760/status.svg?token=wqZw6gGe-o-P4SLLYl1Caw) [![License (MIT)][licence-image]][licence-url]
 
@@ -32,7 +32,7 @@ dependencies:
 
 From there a SQLite database (and tables) can be created and used within the application. 
 
-For this applicaiton I have put all of the SQLite usages within [database_help.dart](src/data/database_help.dart).
+For this applicaiton I have put all of the SQFLite usages within [database_helper.dart](src/lib/data/database_helper.dart).
 
 ```dart
 import 'dart:async';
