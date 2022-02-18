@@ -11,20 +11,23 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:rolodex/main.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
+  group('HomePage tests', ()
+  {
+    testWidgets('Home page loaded', (WidgetTester tester) async {
+      await tester.pumpWidget(App());
+      expect(find.text('Contacts'), findsOneWidget);
+    });
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+    testWidgets('Open add user dialog test', (WidgetTester tester) async {
+      await tester.pumpWidget(App());
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
+      expect(find.text('Add'), findsNothing);
 
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+      // Tap the group_add button
+      await tester.tap(find.byIcon(Icons.group_add));
+      await tester.pump();
+
+      expect(find.text('Add'), findsOneWidget);
+    });
   });
 }
