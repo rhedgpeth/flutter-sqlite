@@ -15,18 +15,22 @@ void main() {
   {
     testWidgets('Home page loaded', (WidgetTester tester) async {
       await tester.pumpWidget(App());
+
+      // Verify that the title bar has loaded
       expect(find.text('Contacts'), findsOneWidget);
     });
 
     testWidgets('Open add user dialog test', (WidgetTester tester) async {
       await tester.pumpWidget(App());
 
+      // Confirm that the add_user_dialog isn't loaded initially
       expect(find.text('Add'), findsNothing);
 
       // Tap the group_add button
       await tester.tap(find.byIcon(Icons.group_add));
       await tester.pump();
 
+      // Confirm that tapping the group_add icon has loaded the add_user_dialog
       expect(find.text('Add'), findsOneWidget);
     });
   });
